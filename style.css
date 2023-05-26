@@ -1,0 +1,330 @@
+:root {
+    --black-bg-color: rgb(10, 10, 10);
+    --black-text-color: rgba(64, 238, 61, 0.852);
+    --green-bg-color: rgb(25, 52, 25);
+    --green-text-color: rgb(14, 42, 248);
+    --ocra-bg-color: rgb(196, 163, 80);
+    --ocra-text-color: rgb(123, 162, 234);
+    --blue-bg-color: rgb(12, 0, 183);
+    --blue-text-color: rgb(249, 248, 248);
+  }
+
+  /* Definisci gli stili del sito per il tema black */
+body.black-theme {
+    background-color: var(--black-bg-color);
+    color: var(--black-text-color);
+  }
+  
+  /* Definisci gli stili del sito per il tema verde */
+  body.green-theme {
+    background-color: var(--green-bg-color);
+    color: var(--green-text-color);
+  }
+  
+  /* Definisci gli stili del sito per il tema ocra */
+  body.ocra-theme {
+    background-color: var(--ocra-bg-color);
+    color: var(--ocra-text-color);
+  }
+  
+  /* Definisci gli stili del sito per il tema blue */
+  body.blue-theme {
+    background-color: var(--blue-bg-color);
+    color: var(--blue-text-color);
+  }
+  
+  button{
+    border-radius: 5px;
+    background-color: var(--black-bg-color);
+    color: var(--black-text-color);
+  }
+  
+  .theme-buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;  
+    font-size: 8px;
+  }
+    
+  
+  
+  #green-theme {
+    background-color: var(--green-bg-color);
+    color: var(--green-text-color);
+  }
+  
+  #ocra-theme {
+    background-color: var(--ocra-bg-color);
+    color: var(--ocra-text-color);
+  }
+  
+  #blue-theme {
+    background-color: var(--blue-bg-color);
+    color: var(--blue-text-color);
+  }
+  
+  
+  /* Stili per i link in base al tema selezionato */
+  body.black-theme a {
+    color: var(--black-text-color);
+  }
+  
+  body.green-theme a {
+    color: var(--green-text-color);
+  }
+  
+  body.ocra-theme a {
+    color: var(--ocra-text-color);
+  }
+  
+  body.blue-theme a {
+    color: var(--blue-text-color);
+  }
+
+  nav {  
+	margin: 27px auto 0;
+	position: relative;
+	width: 700px;
+	height: 70px;
+	background-color: #131714;
+	border-radius: 10px ;
+	font-size: 13px;
+  border: 3px solid rgb(33, 244, 82);  
+   }
+
+   .nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 70px;
+    
+  }
+
+   a {
+    color: #fff;
+    text-decoration: none; 
+    background-color: var(); 
+  
+  }
+  
+  a:hover {
+    text-decoration: underline;
+   
+  }
+
+  .glow-container {   
+    --glow: drop-shadow(0 0 1px rgb(225, 240, 228));
+    filter: var(--glow) brightness(1.5) drop-shadow(0 0 10px rgb(53, 226, 34));
+  }
+  
+  
+
+  /* Stili per il div rosso sotto alla nav */
+
+.tabel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+   
+   
+   
+  }
+  
+  .form-control {
+    width: 550px;
+    height: 250px;  
+    border-radius: 5px; 
+     background: linear-gradient(to bottom right, rgba(180, 35, 35, 0.859) 5%,  rgba(218, 206, 206, 0.859)); 
+    --glow: drop-shadow(0 0 1px rgb(225, 240, 228));
+      filter: var(--glow) brightness(1.5) drop-shadow(0 0 10px rgb(218, 46, 46));
+    border: 3px solid rgb(245, 16, 16);
+    background-color: #131714;
+   
+  }
+  
+  /* matrix frasi dentro al PRIMO div rosso */
+  
+   .matrix-container {
+    position: relative; 
+    height: 230px;
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  .matrix-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: matrix-effect 8s linear infinite;
+  }
+  
+  .matrix-text {
+    font-family: monospace;
+    font-size: 24px;
+    color: #0f0;
+    text-shadow: 0px 0px 10px #0f0, 0px 0px 20px #0f0, 0px 0px 40px #0f0;
+    animation: slide-down 8s linear;
+  }
+  
+  @keyframes slide-down {
+    0% {
+      transform: translateY(-800%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+  @keyframes matrix-effect {
+    0% {
+      transform: translateZ(0);
+    }
+    100% {
+      transform: translateZ(-200px);
+    }
+  } 
+  
+  
+
+
+  /* frasi dentro al secondo div in welcome che compaiono una frase alla volta */
+
+  .tabel-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .form-control2 {
+    width: 550px;
+    height: 250px;  
+    border-radius: 5px; 
+    border: 3px solid rgb(245, 16, 16);
+    background-color: #131714;
+  }
+  
+  .matrix-container2 {
+    position: relative; 
+    height: 230px;
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  .matrix-text-container2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .matrix-text2 {
+    font-family: monospace;
+    font-size: 24px;
+    color: #0f0;
+    text-shadow: 0px 0px 10px #0f0, 0px 0px 20px #0f0, 0px 0px 40px #0f0;
+    opacity: 0;
+    animation: appear 3s ease-in-out forwards;
+  }
+  
+  .matrix-text2:nth-child(1) {
+    animation-delay: 1s;
+  }
+  
+  .matrix-text2:nth-child(2) {
+    animation-delay: 4s;
+  }
+  
+  .matrix-text2:nth-child(3) {
+    animation-delay: 7s;
+  }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+    /* frasi dentro al terzo div in welcome che compaiono una frase alla volta */
+.tabel-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .form-control3 {
+    width: 550px;
+    height: 250px;  
+    border-radius: 5px; 
+    border: 3px solid rgb(245, 16, 16);
+    background-color: #131714;
+  }
+  
+  .matrix-container3 {
+    position: relative; 
+    height: 230px;
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  .matrix-text-container3 p {
+    position: absolute;
+    font-family: monospace;
+    font-size: 24px;
+    color: #0f0;
+    padding: 10px;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgb(255, 255, 255);
+    animation: typing 5s steps(30), blink .5s step-end infinite alternate;
+  }
+   
+   .matrix-text-container3 p::first-letter {
+    opacity: 0.5;
+    
+  } 
+
+   
+  
+  .frase1 p {
+    animation-delay: 2s;
+  }
+  
+  .frase2 p {
+    animation-delay: 8s;
+    margin-top: 75px;
+  }
+  
+  .frase3 p {
+    animation-delay: 15s;
+    margin-top: 150px;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 254, 254) }
+  }
+
+
+  
